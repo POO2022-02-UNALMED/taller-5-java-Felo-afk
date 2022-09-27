@@ -18,7 +18,7 @@ public class Ave extends Animal {
 	public int cantidadAves() {
 		return listado.size;
 	}
-	@overide
+	@override
 	public String movimiento() {
 		return "Volar";
 	}
@@ -33,7 +33,7 @@ public class Ave extends Animal {
 	    aguilas++;
 	    return aguila;
 	}
-	public Arraylist getListado() {
+	public ArrayList getListado() {
 		return this.listado;
 	}
 	public void setListado(Arraylist listado) {

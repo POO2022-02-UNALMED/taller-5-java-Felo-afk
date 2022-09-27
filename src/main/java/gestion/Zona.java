@@ -1,9 +1,10 @@
 package gestion;
 import java.util.ArrayList;
+import zooAnimales.*;
 public class Zona {
 	private String nombre;
 	private Zoologico zoo;
-	private Arraylist<Animal> animales=new ArrayList<Animal>();
+	private ArrayList<Animal> animales=new ArrayList<Animal>();
 	
 	public Zona(String nombre, Zoologico zoo) {
 		this.nombre= nombre;
@@ -18,7 +19,7 @@ public class Zona {
 		animales.add(animal);
 		
 	}
-	public void cantidadAnimales() {
+	public int cantidadAnimales() {
 		return animales.size();
 	}
 	public String getNombre() {

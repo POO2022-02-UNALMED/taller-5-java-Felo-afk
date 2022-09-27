@@ -12,7 +12,7 @@ public class Zoologico {
 	public Zoologico() {
 		this(null, null);
 	}
-	public void agregarZonas(zona zona) {
+	public void agregarZonas(Zona zona) {
 		zonas.add(zona);
 	}
 	public void totalAnimales() {
