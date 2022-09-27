@@ -13,10 +13,9 @@ public class Reptil extends Animal{
 		this.largoCola = largoCola;
 	}
 	public Reptil() {
-		this(null, 0, null, null, null, 0)
+		this(null, 0, null, null, null, 0);
 	}
-	}
-	public void cantidadReptiles() {
+	public int cantidadReptiles() {
 		return listado.size();
 	}
 	@override

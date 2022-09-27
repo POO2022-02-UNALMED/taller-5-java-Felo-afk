@@ -13,7 +13,7 @@ public class Mamifero {
 		this.patas =  patas;
 	}
 	public Mamifero() {
-		this(null, 0, null, null, false, 0)
+		this(null, 0, null, null, false, 0);
 	}
 	
 	public int cantidadMamiferos() {
