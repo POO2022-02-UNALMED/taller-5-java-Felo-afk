@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Zoologico {
 	private String nombre;
 	private String ubicacion;
-	private ArrayList<Zona> zonas=new ArrayList<Zona>();
+	private static ArrayList<Zona> zonas=new ArrayList<Zona>();;
 	public Zoologico() {
 		this(null, null);
 	}
@@ -13,7 +13,7 @@ public class Zoologico {
 	}
 
 	public void agregarZonas(Zona zona) {
-		zonas.add(zona);
+		zonas.
 	}
 	public int totalAnimales() {
 		int animales = 0;

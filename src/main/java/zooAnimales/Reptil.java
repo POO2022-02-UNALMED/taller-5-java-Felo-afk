@@ -18,16 +18,17 @@ public class Reptil extends Animal{
 	public static int cantidadReptiles() {
 		return listado.size();
 	}
+	@Override
 	public String movimiento() {
 		return "reptar";
 	}
-	public Reptil crearIguana(String nombre, int edad, String genero)  {
+	public static Reptil crearIguana(String nombre, int edad, String genero)  {
 		Reptil iguana = new Reptil(nombre, edad, "humedal", genero, "verde", 3);
 		listado.add(iguana);
 		iguanas++;
 		return iguana;
 	}
-	public Reptil crearSerpiente(String nombre, int edad, String genero)  {
+	public static Reptil crearSerpiente(String nombre, int edad, String genero)  {
 		Reptil serpiente = new Reptil(nombre, edad, "selva", genero, "blanco", 1);
 		listado.add(serpiente);
 		serpientes++;

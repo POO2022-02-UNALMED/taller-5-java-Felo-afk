@@ -29,6 +29,7 @@ public class Animal {
                 "Peces: " + Pez.cantidadPeces() + "\n" +
                 "Anfibios: " + Anfibio.cantidadAnfibios();
     }
+    @Override
 	public String toString() {
 		if (this.zona != null) {
             return "Mi nombre es "+getNombre()+ ", tengo una edad de "+getEdad()+ ", habito en " +getHabitat()+
