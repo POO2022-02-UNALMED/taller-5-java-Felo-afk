@@ -28,7 +28,7 @@ public class Animal {
                 "Reptiles: " + Reptil.cantidadReptiles() + "\n" +
                 "Peces: " + Pez.cantidadPeces() + "\n" +
                 "Anfibios: " + Anfibio.cantidadAnfibios();
-    }}
+    }
 	public String toString() {
 		if (this.zona != null) {
             return "Mi nombre es "+getNombre()+ ", tengo una edad de "+getEdad()+ ", habito en " +getHabitat()+
