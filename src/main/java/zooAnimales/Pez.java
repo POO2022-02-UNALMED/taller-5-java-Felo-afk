@@ -24,14 +24,14 @@ public class Pez extends Animal {
 	public String movimiento() {
 		return "nadar";
 	}
-	public Pez crearSalmon(nombre, edad, genero) {
+	public Pez crearSalmon(String nombre, int edad, String genero)  {
 		Pez salmon = new Pez(nombre, edad, "oceano", genero, "rojo", 6);
 		listado.add(salmon);
 		salmones++;
 		return salmon;
 		
 	}
-	public Pez crearBacalao(nombre, edad, genero) {
+	public Pez crearBacalao(String nombre, int edad, String genero)  {
 		Pez bacalao = new Pez(nombre, edad, "oceano", genero, "gris", 6);
 		listado.add(bacalao);
 		bacalaos++;
@@ -54,4 +54,5 @@ public class Pez extends Animal {
 	}
 	public void setListado(ArrayList listado) {
 		this.listado = listado;
+	}
 }

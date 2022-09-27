@@ -26,17 +26,18 @@ public class Animal {
 		return "desplazarse";
 	}
 	public int totalPorTipo() {
-		return ("Mamiferos: "+ Mamifero.cantidadMamiferos + "\nAves: "+ Ave.cantidadAves+ "\nRepiles: "+ Reptiles.cantidadReptiles+ "\nPeces: "+ Pez.cantidadPeces + "\nAnfibios: " + Anfibio.cantidadAnfibios);
+		return "Mamiferos: "+ Mamifero.cantidadMamiferos() + "\n"Aves: "+ Ave.cantidadAves+ 
+				"\nRepiles: "+ Reptiles.cantidadReptiles()+ "\nPeces: "+ Pez.cantidadPeces() + "\nAnfibios: " + Anfibio.cantidadAnfibios();
 	}
 	@override
 	public String toString() {
 		if (this.zona != null) {
-		return "Mi nombre es "+ nombre + " tengo una edad de " + edad + "habito en "+ habitat +" y mi genero es "
-				genero ", la zona en la que me ubico es "+zona.getNombre +" , en el "+ zona.getZoo;
+		return "Mi nombre es "+ this.nombre + " tengo una edad de " + this.edad + "habito en "+ this.habitat +" y mi genero es "
+				this.genero ", la zona en la que me ubico es "+zona.getNombre() +" , en el "+ zona.getZoo.nombre;
 		}
 		else {
-            return "Mi nombre es "+nombre + ", tengo una edad de "+ edad + ", habito en " + habitat+
-                    " y mi genero es " + genero ;
+            return "Mi nombre es "+this.nombre + ", tengo una edad de "+ this.edad + ", habito en " + this.habitat+
+                    " y mi genero es " + this.genero ;
 		}
 	}
 	public int getTotalAnimales() {

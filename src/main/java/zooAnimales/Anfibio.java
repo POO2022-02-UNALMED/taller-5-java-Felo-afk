@@ -22,13 +22,13 @@ public class Anfibio extends Animal {
 	public String movimiento() {
 		return "saltar";
 	}
-	public Anfibio crearRana(nombre, edad, genero) {
+	public Anfibio crearRana(String nombre, int edad, String genero)  {
 		Anfibio rana = new Anfibio(nombre, edad, "selva", genero, "rojo", true);
 		listado.add(Rana);
 		ranas++;
 		return rana;
 	}
-	public void crearSalamandra(nombre, edad, genero) {
+	public void crearSalamandra(String nombre, int edad, String genero)  {
 		Anfibio salamandra = new Anfibio(nombre, edad, "selva", genero, "negro y amarillo", false);
 		listado.add(salamandra);
 		salamandras++;

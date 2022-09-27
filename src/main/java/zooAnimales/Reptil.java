@@ -23,13 +23,13 @@ public class Reptil extends Animal{
 	public String movimiento() {
 		return "reptar";
 	}
-	public Reptil crearIguana(nombre, edad, genero) {
+	public Reptil crearIguana(String nombre, int edad, String genero)  {
 		Reptil iguana = new Reptil(nombre, edad, "humedal", genero, "verde", 3);
 		listado.add(iguana);
 		iguanas++;
 		return iguana;
 	}
-	public Reptil crearSerpiente(nombre, edad, genero) {
+	public Reptil crearSerpiente(String nombre, int edad, String genero)  {
 		Reptil serpiente = new Reptil(nombre, edad, "selva", genero, "blanco", 1);
 		listado.add(serpiente);
 		serpientes++;
@@ -40,7 +40,7 @@ public class Reptil extends Animal{
 		return this.colorEscamas;
 	}
 	public void setColorEscamas(String colorEscamas) {
-		this.colorEscamas = colorEscamas
+		this.colorEscamas = colorEscamas;
 	}
 	public int getLargoCola() {
 		return this.largoCola;
