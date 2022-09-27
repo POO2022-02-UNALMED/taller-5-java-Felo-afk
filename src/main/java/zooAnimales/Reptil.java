@@ -6,15 +6,15 @@ public class Reptil extends Animal{
 	public static int serpientes;
 	private String colorEscamas;
 	private int largoCola;
-
+	public Reptil() {
+		this(null, 0, null, null, null, 0);
+	}
 	public Reptil(String nombre, int edad, String habitat, String genero, String colorEscamas, int largoCola) {
 		super(nombre, edad, habitat, genero);
 		this.colorEscamas = colorEscamas;
 		this.largoCola = largoCola;
 	}
-	public Reptil() {
-		this(null, 0, null, null, null, 0);
-	}
+
 	public int cantidadReptiles() {
 		return listado.size();
 	}

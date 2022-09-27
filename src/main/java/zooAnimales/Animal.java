@@ -7,6 +7,10 @@ public class Animal {
 	private String habitat;
 	private String genero;
 	private Zona zona;
+	public Animal() {
+		this(null,0,null,null);
+		
+	}
 	public Animal (String nombre, int edad, String habitat, String genero) {
 		this.totalAnimales++;
 		this.nombre = nombre;
@@ -14,10 +18,7 @@ public class Animal {
 		this.habitat = habitat;
 		this.zona = zona;
 	}
-	public Animal() {
-		this(null,0,null,null);
-		
-	}
+
 	public String moivimiento() {
 		return "desplazarse";
 	}
@@ -26,7 +27,6 @@ public class Animal {
     			"Reptiles: " + Reptil.cantidadReptiles()+ "\n" + "Peces: " + Pez.cantidadPeces() + "\n" +
     			"Anfibios: " + Anfibio.cantidadAnfibios();
 	}
-	@override
 	public String toString() {
 		if (this.zona != null) {
             return "Mi nombre es "+getNombre()+ ", tengo una edad de "+getEdad()+ ", habito en " +getHabitat()+
