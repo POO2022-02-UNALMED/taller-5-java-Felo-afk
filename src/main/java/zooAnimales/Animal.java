@@ -19,7 +19,7 @@ public class Animal {
 		this.zona = zona;
 	}
 
-	public String moivimiento() {
+	public String movimiento() {
 		return "desplazarse";
 	}
     public static String totalPorTipo() {
