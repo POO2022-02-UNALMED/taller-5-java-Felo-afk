@@ -20,7 +20,7 @@ public class Ave extends Animal {
 	}
 	@Override
 	public String movimiento() {
-		return "Volar";
+		return "volar";
 	}
 	public static Ave crearHalcon(String nombre, int edad, String genero) {
 		Ave halcon = new Ave(nombre, edad, "montanas", genero, "cafe glorioso");		
