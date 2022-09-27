@@ -5,7 +5,7 @@ import zooAnimales.Animal;
 public class Zona {
     private String nombre;
     private Zoologico zoo;
-    private ArrayList<Animal> animales = new ArrayList<Animal>();
+    private ArrayList<Animal> animales = new ArrayList<>();
 
     public Zona(String nombre, Zoologico zoo) {
         this.nombre = nombre;
@@ -19,32 +19,24 @@ public class Zona {
     public void agregarAnimales(Animal animal) {
         animales.add(animal);
     }
+
     public int cantidadAnimales() {
-    	return animales.size();
-    	
+        return animales.size();
     }
 
-	public String getNombre() {
-		return this.nombre;
-	}
+    public String getNombre() {
+        return nombre;
+    }
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
-	public Zoologico getZoo() {
-		return this.zoo;
-	}
+    public Zoologico getZoo() {
+        return zoo;
+    }
 
-	public void setZoo(Zoologico zoo) {
-		this.zoo = zoo;
-	}
-
-	public ArrayList getAnimales() {
-		return this.animales;
-	}
-
-	public void setAnimales(ArrayList animales) {
-		this.animales = animales;
-	}
+    public void setZoo(Zoologico zoo) {
+        this.zoo = zoo;
+    }
 }
