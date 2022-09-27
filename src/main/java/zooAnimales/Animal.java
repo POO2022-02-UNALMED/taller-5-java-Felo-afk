@@ -8,8 +8,7 @@ public class Animal {
 	private String genero;
 	private Zona zona;
 	public Animal() {
-		this(null,0,null,null);
-		
+	this.totalAnimales++;	
 	}
 	public Animal (String nombre, int edad, String habitat, String genero) {
 		this.totalAnimales++;
