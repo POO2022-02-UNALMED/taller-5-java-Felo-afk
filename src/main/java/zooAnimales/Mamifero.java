@@ -31,9 +31,6 @@ public class Mamifero {
 		caballos++;
 		return caballo;
 	}
-	public int cantidadMamiferos() {
-		return listado.size();
-	}
 	public boolean isPelaje() {
 		return this.pelaje;
 	}

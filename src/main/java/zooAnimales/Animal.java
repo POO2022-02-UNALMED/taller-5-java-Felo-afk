@@ -7,16 +7,12 @@ public class Animal {
 	private String habitat;
 	private String genero;
 	private Zona zona;
-	public Animal (String nombre, int edad, String habitat, Zona zona) {
+	public Animal (String nombre, int edad, String habitat, String genero) {
 		this.totalAnimales++;
 		this.nombre = nombre;
 		this.edad = edad;
 		this.habitat = habitat;
 		this.zona = zona;
-	}
-
-	public Animal(String nombre, int edad, String habitat, String genero) {
-		this(nombre, edad, habitat, genero, null);
 	}
 	public Animal() {
 		this(null,0,null,null);

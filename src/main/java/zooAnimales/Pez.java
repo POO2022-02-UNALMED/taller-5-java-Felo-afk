@@ -16,11 +16,10 @@ public class Pez extends Animal {
 		this(null, 0, null, null, null, 0);
 		
 	}
-	public void cantidadPeces() {
+	public int cantidadPeces() {
 		return listado.size();
 		
 	}
-	@override
 	public String movimiento() {
 		return "nadar";
 	}

@@ -15,16 +15,15 @@ public class Anfibio extends Animal {
 	public Anfibio() {
 		this(null, 0, null, null, null, false);
 	}
-	public void cantidadAnfibios() {
+	public int cantidadAnfibios() {
 		return listado.size();
 	}
-	@override
 	public String movimiento() {
 		return "saltar";
 	}
 	public Anfibio crearRana(String nombre, int edad, String genero)  {
 		Anfibio rana = new Anfibio(nombre, edad, "selva", genero, "rojo", true);
-		listado.add(Rana);
+		listado.add(rana);
 		ranas++;
 		return rana;
 	}
